@@ -1,7 +1,5 @@
-import {TransparentlyNativePropsPropsDefine} from '../../../common/transparently-native-props/index'
 import {gaeaHelper} from '../../gaea-helper/index'
 import * as CustomView from '../view/view.type'
-import * as ReactNaitve from 'react-native'
 
 export interface PropsDefine extends CustomView.PropsDefine {
 
