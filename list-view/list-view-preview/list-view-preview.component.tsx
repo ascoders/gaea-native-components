@@ -125,9 +125,12 @@ export default class ImageComponent extends React.Component <typings.PropsDefine
     }
 
     renderRow = (rowData: any): any => {
-        return React.Children.map(this.props.children, (child: any) => React.cloneElement(child, {
+        const children = React.Children.map(this.props.children, (child: any) => React.cloneElement(child, {
             gaeaData: rowData
         }))
+        return (
+            <View>{children}</View>
+        )
     }
 
     render() {
